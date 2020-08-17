@@ -33,3 +33,8 @@ services:
     # AppBundle\Service\ExampleService:
     #     arguments:
     #         $someArgument: 'some_value'
+    mission.registration_successfull_redirection_subscriber:
+        class: UserBundle\EventListener\RegistrationSuccessfulRedirectionSubscriber
+        autowire: true
+        tags:
+            - { name: kernel.event_subscriber }
