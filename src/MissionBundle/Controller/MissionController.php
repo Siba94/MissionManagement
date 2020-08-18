@@ -99,10 +99,14 @@ class MissionController extends Controller
                 if (filter_var($vendorEmail, FILTER_VALIDATE_EMAIL)) {
                     $this->get('mission.mission_management')
                         ->create($productName, $vendorName, $vendorEmail, $quantity, $serviceDate);
+                    $this->addFlash('success', "Successfully Created");
+                    return $this->redirectToRoute('mission_mission_page_read', [
+                        'missionId' => $mission->getId()
+                    ]);
                 }else{
                     $this->addFlash("danger", "Sorry, the provided email is not in a valid format.");
                 }
-                $this->addFlash('success', "Successfully Created");
+
             }else{
                 $this->addFlash('danger', 'Kindly fill up all the fields.');
             }
@@ -146,10 +150,14 @@ class MissionController extends Controller
                 if (filter_var($vendorEmail, FILTER_VALIDATE_EMAIL)) {
                     $this->get('mission.mission_management')
                         ->update($mission, $productName, $vendorName, $vendorEmail, $quantity, $serviceDate);
+                    $this->addFlash('success', "Successfully Created");
+                    return $this->redirectToRoute('mission_mission_page_read', [
+                        'missionId' => $mission->getId()
+                    ]);
                 }else{
                     $this->addFlash("danger", "Sorry, the provided email is not in a valid format.");
                 }
-                $this->addFlash('success', "Successfully Updated");
+//                $this->addFlash('success', "Successfully Updated");
             }else{
                 $this->addFlash('danger', 'Kindly fill up all the fields.');
             }
