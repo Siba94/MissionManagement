@@ -4,6 +4,7 @@ services:
 #        arguments: ["@service_id", "plain_value", "%parameter%"]
     mission.mission_management:
         class: MissionBundle\Service\MissionManagement
-        argument:
-          - '@service_container'
-          - '@doctrine.orm.entity_manager'
+#        argument:
+#          - '@service_container'
+#          - '@doctrine.orm.entity_manager'
+        autowire: true

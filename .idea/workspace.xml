@@ -20,51 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51d8b98d-6c69-4688-9d8e-5e7434236133" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/mission_management.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mission_management.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/AppKernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/AppKernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/routing.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MissionBundle/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MissionBundle/Controller/DefaultController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MissionBundle/Controller/MissionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MissionBundle/Controller/MissionController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MissionBundle/Entity/Mission.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MissionBundle/Entity/Mission.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MissionBundle/Form/MissionPageType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MissionBundle/Form/MissionPageType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MissionBundle/Repository/MissionRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MissionBundle/Repository/MissionRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MissionBundle/Resources/config/services.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/MissionBundle/Resources/config/services.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MissionBundle/Resources/views/Default/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/MissionBundle/Resources/views/Default/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MissionBundle/Resources/views/Mission/list_all_mission.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/MissionBundle/Resources/views/Mission/list_all_mission.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserBundle/EventListener/RegistrationSuccessfulRedirectionSubscriber.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserBundle/EventListener/RegistrationSuccessfulRedirectionSubscriber.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assets/css/material-dashboard-rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assets/css/material-dashboard.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assets/css/material-dashboard.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assets/css/material-dashboard.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assets/js/core/bootstrap-material-design.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assets/js/core/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assets/js/core/popper.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assets/js/material-dashboard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assets/js/material-dashboard.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assets/js/material-dashboard.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assets/js/plugins/arrive.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assets/js/plugins/bootstrap-datetimepicker.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assets/js/plugins/bootstrap-notify.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assets/js/plugins/bootstrap-selectpicker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assets/js/plugins/bootstrap-tagsinput.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assets/js/plugins/chartist.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assets/js/plugins/fullcalendar.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assets/js/plugins/jasny-bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assets/js/plugins/jquery-jvectormap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assets/js/plugins/jquery.bootstrap-wizard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assets/js/plugins/jquery.dataTables.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assets/js/plugins/jquery.tagsinput.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assets/js/plugins/jquery.validate.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assets/js/plugins/moment.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assets/js/plugins/nouislider.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assets/js/plugins/perfect-scrollbar.jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assets/js/plugins/sweetalert2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MissionBundle/Resources/views/Mission/list_all_mission.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/MissionBundle/Resources/views/Mission/list_all.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MissionBundle/Service/MissionManagement.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MissionBundle/Service/MissionManagement.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserBundle/Repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserBundle/Repository/UserRepository.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,6 +126,7 @@
       <workItem from="1597686781395" duration="10057000" />
       <workItem from="1597704894561" duration="3125000" />
       <workItem from="1597709605672" duration="2330000" />
+      <workItem from="1597712757236" duration="6098000" />
     </task>
     <servers />
   </component>
@@ -193,9 +158,17 @@
       <screen x="49" y="27" width="1317" height="741" />
     </state>
     <state x="643" y="116" width="723" height="561" key="NewPhpClassDialog/49.27.1317.741@49.27.1317.741" timestamp="1597705911207" />
-    <state x="371" y="175" key="run.anything.popup" timestamp="1597711231345">
+    <state x="727" y="106" width="618" height="580" key="find.popup" timestamp="1597717737658">
       <screen x="49" y="27" width="1317" height="741" />
     </state>
-    <state x="371" y="175" key="run.anything.popup/49.27.1317.741@49.27.1317.741" timestamp="1597711231345" />
+    <state x="727" y="106" width="618" height="580" key="find.popup/49.27.1317.741@49.27.1317.741" timestamp="1597717737658" />
+    <state x="371" y="175" key="run.anything.popup" timestamp="1597713298816">
+      <screen x="49" y="27" width="1317" height="741" />
+    </state>
+    <state x="371" y="175" key="run.anything.popup/49.27.1317.741@49.27.1317.741" timestamp="1597713298816" />
+    <state x="432" y="310" width="540" height="172" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1597714309067">
+      <screen x="49" y="27" width="1317" height="741" />
+    </state>
+    <state x="432" y="310" width="540" height="172" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/49.27.1317.741@49.27.1317.741" timestamp="1597714309067" />
   </component>
 </project>

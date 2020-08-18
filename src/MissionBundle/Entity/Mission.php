@@ -23,7 +23,7 @@ class Mission
 
     /**
      * @ORM\ManyToOne(targetEntity="UserBundle\Entity\User")
-     * @ORM\JoinColumn(name="client_id", referencedColumnName="id")
+     * @ORM\JoinColumn(name="client_id", referencedColumnName="id", nullable=false)
      */
     private $client;
 

@@ -32,6 +32,10 @@ class MissionController extends Controller
         $user = $this->get('security.token_storage')
             ->getToken()->getUser();
         $em = $this->getDoctrine()->getManager();
+        $mission = $em->getRepository('UserBundle:User')
+            ->listAllMission($user->getId());
+        var_dump($mission);
+        die();
         $missions = $em->getRepository('MissionBundle:Mission')
             ->findBy([], ["serviceDate" => "DESC"], $limit, $skip);
         return $this->render('MissionBundle:Mission:list_all.html.twig', [
@@ -43,7 +47,7 @@ class MissionController extends Controller
      * @param Request $request
      * @param $missionId
      * @return Response|null
-     * @Route("/read", methods={"GET"}, name="mission_mission_page_read")
+     * @Route("/read/{missionId}", methods={"GET"}, name="mission_mission_page_read")
      */
     public function pageReadAction(Request $request, $missionId){
         $em = $this->getDoctrine()->getManager();
@@ -66,18 +70,17 @@ class MissionController extends Controller
     /**
      * @param Request $request
      * @return Response|null
-     * @Route("/create", methods={"POST"}, name="mission_mission_page_create")
+     * @Route("/create", methods={"POST", "GET"}, name="mission_mission_page_create")
      */
     public function pageCreateAction(Request $request){
         $mission = new Mission();
         $form = $this->createForm(MissionPageType::class, $mission);
         $form->handleRequest($request);
-        
         if($form->isSubmitted()){
-            $productName = $form['productName'];
-            $vendorName = $form['vendorName'];
-            $vendorEmail = $form['vendorEmail'];
-            $quantity = $form['quantity'];
+            $productName = $form['productName']->getData();
+            $vendorName = $form['vendorName']->getData();
+            $vendorEmail = $form['vendorEmail']->getData();
+            $quantity = $form['quantity']->getData();
             $serviceDate = $request->get('serviceDate');
             if(!empty($productName) && !empty($vendorName) && !empty($vendorEmail) && !empty($quantity) && !empty($serviceDate)){
                 if (filter_var($vendorEmail, FILTER_VALIDATE_EMAIL)) {
@@ -114,10 +117,10 @@ class MissionController extends Controller
         $form = $this->createForm(MissionPageType::class, $mission);
         $form->handleRequest($request);
         if($form->isSubmitted()){
-            $productName = $form['productName'];
-            $vendorName = $form['vendorName'];
-            $vendorEmail = $form['vendorEmail'];
-            $quantity = $form['quantity'];
+            $productName = $form['productName']->getData();
+            $vendorName = $form['vendorName']->getData();
+            $vendorEmail = $form['vendorEmail']->getData();
+            $quantity = $form['quantity']->getData();
             $serviceDate = $request->get('serviceDate');
             if(!empty($productName) && !empty($vendorName) && !empty($vendorEmail) && !empty($quantity)){
                 if (filter_var($vendorEmail, FILTER_VALIDATE_EMAIL)) {

@@ -5,6 +5,7 @@ namespace MissionBundle\Service;
 
 
 use Doctrine\ORM\EntityManager;
+use Doctrine\ORM\EntityManagerInterface;
 use MissionBundle\Entity\Mission;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
@@ -12,7 +13,7 @@ class MissionManagement
 {
     private $container;
     private $em;
-    public function __construct(ContainerInterface $container, EntityManager $entityManager)
+    public function __construct(ContainerInterface $container, EntityManagerInterface $entityManager)
     {
         $this->container = $container;
         $this->em = $entityManager;
@@ -20,11 +21,14 @@ class MissionManagement
 
     public function create($productName, $vendorName, $vendorEmail, $quantity, $serviceDate){
         $mission = new Mission();
-        $mission->setProductName($productName)
+        $mission
+            ->setProductName($productName)
             ->setVendorName($vendorName)
             ->setVendorEmail($vendorEmail)
             ->setQuantity($quantity)
-            ->setServiceDate($serviceDate);
+            ->setServiceDate(new \DateTime($serviceDate))
+            ->setClient($this->container->get('security.token_storage')->getToken()->getUser())
+            ;
         $this->em->persist($mission);
         $this->em->flush();
         return $mission;
@@ -35,7 +39,9 @@ class MissionManagement
             ->setVendorName($vendorName)
             ->setVendorEmail($vendorEmail)
             ->setQuantity($quantity)
-            ->setServiceDate($serviceDate);
+            ->setServiceDate(new \DateTime($serviceDate))
+            ->setClient($this->container->get('security.token_storage')->getToken()->getUser())
+        ;
         $this->em->persist($mission);
         $this->em->flush();
         return $mission;

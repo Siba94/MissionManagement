@@ -1,0 +1,32 @@
+{% extends "::base.html.twig" %}
+{% block title %}{% endblock %}
+{% block stylesheets %}{{ parent() }}{% endblock %}
+{% block body %}
+    {% if app.user and app.user.superAdmin %}
+        Username: {{ app.user.username }}
+    {% endif %}
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Product Name</th>
+            <th scope="col">Vendor Name</th>
+            <th scope="col">vendor Email</th>
+            <th scope="col">Service Date</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% set i = 1 %}
+        {% for each in missions %}
+            <tr>
+                <td>{{ i }}</td>
+                <td><a href="">{{ each.productName }}</td>
+                <td>{{ each.vendorName }}</td>
+                <td>{{ each.vendorEmail }}</td>
+                <td><a href="">{{ each.serviceDate|date('Y-m-d H:i:s') }}</a></td>
+            </tr>
+            {% set i = i+1 %}
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
