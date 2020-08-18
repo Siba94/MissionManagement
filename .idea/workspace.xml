@@ -21,13 +21,11 @@
   <component name="ChangeListManager">
     <list default="true" id="51d8b98d-6c69-4688-9d8e-5e7434236133" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MissionBundle/Controller/MissionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MissionBundle/Controller/MissionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MissionBundle/Entity/Mission.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MissionBundle/Entity/Mission.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MissionBundle/Form/MissionPageType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MissionBundle/Form/MissionPageType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MissionBundle/Repository/MissionRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MissionBundle/Repository/MissionRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MissionBundle/Resources/config/services.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/MissionBundle/Resources/config/services.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MissionBundle/Resources/views/Mission/list_all_mission.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/MissionBundle/Resources/views/Mission/list_all.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MissionBundle/Service/MissionManagement.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MissionBundle/Service/MissionManagement.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MissionBundle/Resources/views/Mission/list_all.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/MissionBundle/Resources/views/Mission/list_all.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MissionBundle/Resources/views/Mission/update.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/MissionBundle/Resources/views/Mission/update.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UserBundle/Repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserBundle/Repository/UserRepository.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -126,7 +124,7 @@
       <workItem from="1597686781395" duration="10057000" />
       <workItem from="1597704894561" duration="3125000" />
       <workItem from="1597709605672" duration="2330000" />
-      <workItem from="1597712757236" duration="6098000" />
+      <workItem from="1597712757236" duration="11028000" />
     </task>
     <servers />
   </component>
@@ -158,10 +156,10 @@
       <screen x="49" y="27" width="1317" height="741" />
     </state>
     <state x="643" y="116" width="723" height="561" key="NewPhpClassDialog/49.27.1317.741@49.27.1317.741" timestamp="1597705911207" />
-    <state x="727" y="106" width="618" height="580" key="find.popup" timestamp="1597717737658">
+    <state x="727" y="106" width="618" height="580" key="find.popup" timestamp="1597721006406">
       <screen x="49" y="27" width="1317" height="741" />
     </state>
-    <state x="727" y="106" width="618" height="580" key="find.popup/49.27.1317.741@49.27.1317.741" timestamp="1597717737658" />
+    <state x="727" y="106" width="618" height="580" key="find.popup/49.27.1317.741@49.27.1317.741" timestamp="1597721006406" />
     <state x="371" y="175" key="run.anything.popup" timestamp="1597713298816">
       <screen x="49" y="27" width="1317" height="741" />
     </state>

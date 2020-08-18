@@ -13,12 +13,11 @@ class MissionRepository extends \Doctrine\ORM\EntityRepository
     public function listAllMission($userId){
         $this->getEntityManager()
             ->createQuery(
-                'SELECT m FROM MissionBundle:Mission m
+                'SELECT m, u FROM MissionBundle:Mission m
                 JOIN m.client u
-                WHERE m.client = 2
-                '
+                WHERE m.client = :userId'
             )
-//            ->setParameter('userId', $userId)
+            ->setParameter('userId', $userId)
             ->getResult();
     }
 }

@@ -10,14 +10,14 @@ namespace UserBundle\Repository;
  */
 class UserRepository extends \Doctrine\ORM\EntityRepository
 {
-    public function listAllMission($userId){
-        $this->getEntityManager()
-            ->createQuery(
-                'SELECT u, m FROM MissionBundle:Mission m
-                JOIN m.client u
-                WHERE m.client = 2'
-            )
-            ->setParameter('userId', $userId)
-            ->getResult();
-    }
+//    public function listAllMission($userId){
+//        $this->getEntityManager()
+//            ->createQuery(
+//                'SELECT u, m FROM MissionBundle:Mission m
+//                JOIN m.client u
+//                WHERE m.client = 2'
+//            )
+//            ->setParameter('userId', $userId)
+//            ->getResult();
+//    }
 }

@@ -32,14 +32,27 @@ class MissionController extends Controller
         $user = $this->get('security.token_storage')
             ->getToken()->getUser();
         $em = $this->getDoctrine()->getManager();
-        $mission = $em->getRepository('UserBundle:User')
-            ->listAllMission($user->getId());
-        var_dump($mission);
-        die();
-        $missions = $em->getRepository('MissionBundle:Mission')
+//        $mission = $em->getRepository('MissionBundle:Mission')
+//            ->listAllMission($user->getId());
+//        var_dump($mission);
+        $mission = $em->getRepository('MissionBundle:Mission')
             ->findBy([], ["serviceDate" => "DESC"], $limit, $skip);
+//        $results = [];
+//        $i = 0;
+//        foreach ($mission as $each){
+//            $userDetails = $em->getRepository("UserBundle:User")
+//                ->findOneBy([
+//                    'id' => $each->getClient()->getId()
+//                ]);
+//            if(!empty($userDetails)){
+//                $results[$i]['mission'] = $each;
+//                $results[$i]['userDetails'] = $userDetails;
+//                $i++;
+//            }
+//        }
         return $this->render('MissionBundle:Mission:list_all.html.twig', [
-            "missions" => $missions
+            "missions" => $mission,
+//            'results' => $results
         ]);
     }
 
@@ -52,10 +65,10 @@ class MissionController extends Controller
     public function pageReadAction(Request $request, $missionId){
         $em = $this->getDoctrine()->getManager();
         $mission = $em->getRepository('MissionBundle:Mission')
-            ->find($missionId);
+            ->finresultd($missionId);
         if(!empty($mission)){
             if(!($this->get('security.token_storage')->getToken()->getUser()->isSuperAdmin()
-                || ($mission->getClient() == $this->get('security.token_storage')->getToken()->getUser()))
+                || ($mission->getClient()->getId() == $this->get('security.token_storage')->getToken()->getUser()->getId()))
             ){
                 throw new AccessDeniedException("Sorry, you are not allowed to access this page");
             }
@@ -111,8 +124,15 @@ class MissionController extends Controller
         $mission = $em->getRepository('MissionBundle:Mission')
             ->find($missionId);
         if(empty($mission)){
-            $this->addFlash("danger", "Sorry, the requested mission details not found.");
-            return $this->redirectToRoute("mission_mission_page_read");
+//            $this->addFlash("danger", "Sorry, the requested mission details not found.");
+//            return $this->redirectToRoute("mission_mission_page_read");
+            throw $this->createNotFoundException("Sorry, the requested mission details not found.");
+        }else{
+            if(!($this->get('security.token_storage')->getToken()->getUser()->isSuperAdmin()
+                || ($mission->getClient()->getId() == $this->get('security.token_storage')->getToken()->getUser()->getId()))
+            ){
+                throw new AccessDeniedException("Sorry, you are not allowed to access this page");
+            }
         }
         $form = $this->createForm(MissionPageType::class, $mission);
         $form->handleRequest($request);

@@ -8,12 +8,14 @@
                     {{ form_start(form) }}
                     {{ form_widget(form) }}
                     <div class="form-group">
-                        <input name="serviceDate" type="datetime-local" class="form-control">
+                        <input name="serviceDate" type="datetime-local" class="date form-control" REQUIRED
+                               value="{{ mission.serviceDate|date('Y-m-dTH:i') }}">
                     </div>
-                    <input type="submit" class="btn btn-success">Update
+                    <input type="submit" class="btn btn-success">
                     {{ form_end(form) }}
                 </form>
             </div>
+            <a class="btn" href="{{ path('mission_mission_page_list') }}">Back to Page List</a>
         </div>
     </div>
 {% endblock %}
