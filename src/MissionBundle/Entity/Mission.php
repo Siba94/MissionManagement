@@ -62,6 +62,10 @@ class Mission
      */
     private $vendorEmail;
 
+//    public function __construct()
+//    {
+//        $this->serviceDate = new \DateTime();
+//    }
 
     /**
      * Get id
@@ -71,30 +75,6 @@ class Mission
     public function getId()
     {
         return $this->id;
-    }
-
-    /**
-     * Set client
-     *
-     * @param string $client
-     *
-     * @return Mission
-     */
-    public function setClient($client)
-    {
-        $this->client = $client;
-
-        return $this;
-    }
-
-    /**
-     * Get client
-     *
-     * @return string
-     */
-    public function getClient()
-    {
-        return $this->client;
     }
 
     /**
@@ -215,6 +195,22 @@ class Mission
     public function getVendorEmail()
     {
         return $this->vendorEmail;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getClient()
+    {
+        return $this->client;
+    }
+
+    /**
+     * @param mixed $client
+     */
+    public function setClient($client)
+    {
+        $this->client = $client;
     }
 }
 

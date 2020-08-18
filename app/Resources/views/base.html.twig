@@ -1,13 +1,68 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Welcome to this Galery{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{{ asset('asset/img/favicon.png') }}">
+    <!--custom css-->
+    {% block stylesheets %}
+        {% stylesheets
+            'assets/css/bootstrap.min.css'
+            'assets/css/font-awesome/css/font-awesome.min.css'
+            'assets/css/style.css'
+            'assets/css/responsive.css'
+            filter="cssrewrite"
+            filter="?uglifycss" %}
+            <link rel="stylesheet" href="{{ asset_url }}" />
+        {% endstylesheets %}
+    {% endblock %}
+    {#    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />#}
+    {#    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />#}
+    {#    <link href="css/style.css" rel="stylesheet" type="text/css" />#}
+    {#    <link href="css/responsive.css" rel="stylesheet" type="text/css" />#}
+
+</head>
+<body>
+<!--headerblock-->
+{#<header>#}
+{#    <div class="top-line">#}
+{#        <div class="container top-box">#}
+{#            <div class="leftside">#}
+{#            </div>#}
+{#            <div class="rightside">#}
+{#                <div class="top-button">#}
+{#                    {% if app.user %}#}
+{#                        <a class="" href="/logout">Logout</a>#}
+{#                    {% endif %}#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{#    <div class="container">#}
+{#        <div class="row">#}
+{#            <div class="col-md-12 col-sm-12"></div>#}
+{#        </div>#}
+{#    </div>#}
+{#</header>#}
+<!--end of header block-->
+{% block body %}
+{% endblock %}
+
+<a style="display: none" href="javascript:void(0);" class="scrollTop back-to-top" id="back-to-top">
+    <i class="fa fa-chevron-up"></i>
+</a>
+{% block javascripts %}
+    {% javascripts
+        'assets/js/jquery-2.1.1.min.js'
+        'assets/js/bootstrap.min.js'
+        'assets/js/custom.js'
+
+        filter="?uglifyjs2" %}
+        <script src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+{% endblock %}
+{% block jsVariables %}
+{% endblock %}
+</body>
 </html>

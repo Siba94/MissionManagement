@@ -39,6 +39,7 @@ framework:
 twig:
     debug: '%kernel.debug%'
     strict_variables: '%kernel.debug%'
+    form_themes: ['bootstrap_4_layout.html.twig']
 
 # Doctrine Configuration
 doctrine:
@@ -80,3 +81,18 @@ fos_user:
     from_email:
         address: "acharisibananda@gmail.com"
         sender_name: "aws"
+assetic:
+    debug:              '%kernel.debug%'
+    use_controller:     '%kernel.debug%'
+    filters:
+        cssrewrite:     ~
+        uglifyjs2:
+            # the path to the uglifyjs executable
+            bin: %kernel.root_dir%/../node_modules/uglify-js/bin/uglifyjs
+            compress: true
+            mangle: true
+            # Umm controversial
+            screw_ie8: true
+            uglifycss:
+                # the path to the uglifyjs executable
+                bin: %kernel.root_dir%/../node_modules/uglifycss/uglifycss

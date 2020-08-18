@@ -19,7 +19,7 @@ class RegistrationSuccessfulRedirectionSubscriber implements EventSubscriberInte
     }
 
     public function onRegistrationSuccess(FormEvent $event){
-        $url = $this->router->generate('mission_mission_list_all_mission');
+        $url = $this->router->generate('mission_mission_page_list');
         $response = new RedirectResponse($url);
         $event->setResponse($response);
     }

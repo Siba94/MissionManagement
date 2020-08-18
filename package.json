@@ -1,0 +1,26 @@
+{
+  "name": "mission_management",
+  "version": "1.0.0",
+  "description": "Symfony Standard Edition ========================",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Siba94/MissionManagement.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Siba94/MissionManagement/issues"
+  },
+  "homepage": "https://github.com/Siba94/MissionManagement#readme",
+  "dependencies": {
+    "uglify-js": "^3.10.1",
+    "uglifycss": "0.0.29"
+  }
+}

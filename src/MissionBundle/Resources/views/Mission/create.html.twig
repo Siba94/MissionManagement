@@ -1,0 +1,18 @@
+{% extends "::base.html.twig" %}
+{% block body%}
+    <div class="container" style="margin-top: 30px">
+        <div class="row">
+            <div class="col-md-8">
+                <form action="{{ path('mission_mission_page_create') }}" method="post">
+                    {{ form_start(form) }}
+                    {{ form_widget(form) }}
+                    <div class="form-group">
+                        <input name="serviceDate" type="datetime-local" class="form-control" required>
+                    </div>
+                    <input type="submit" class="btn btn-success">
+                    {{ form_end(form) }}
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,1 +1,42 @@
-Hello World!
+{% extends "::base.html.twig" %}
+{% block title %}{% endblock %}
+{% block stylesheets %}
+    {{ parent() }}
+{% endblock %}
+{% block body %}
+    <div id="container">
+        <div class="container">
+            <div class="row">
+                <!--left sidebar---->
+                <aside  class="col-sm-3 left-sidebar">
+                    <div class="box category">
+                        <div class="box-heading">
+                            <h3>Categories <i class="fa fa-angle-up"></i></h3>
+                        </div>
+
+{#                        <div class="box-content test">#}
+{#                            <div class="box-category">#}
+{#                                <ul class="menu">#}
+{#                                    {% for each in categories %}#}
+{#                                        <li><a href="{{ path('photo_gallery_image_gallery_get_flickr_group', {'groupName':each.name}) }}" class="custom_hover">{{ each.name|capitalize }}</a></li>#}
+{#                                    {% endfor %}#}
+{#                                </ul>#}
+{#                            </div>#}
+{#                        </div>#}
+                    </div>
+                </aside>
+                <!--main content-->
+                <div id="content" class="col-sm-9">
+{#                    {% if photos is defined %}#}
+{#                        {% for each in photos %}#}
+{#                            <img src="{{ each.url_s }}">#}
+{#                        {% endfor %}#}
+{#                    {% else %}#}
+{#                        <h2>Please select a category from the menu to see images here.</h2>#}
+{#                    {% endif %}#}
+                </div>
+                <!--end main content-->
+            </div>
+        </div>
+    </div>
+{% endblock %}

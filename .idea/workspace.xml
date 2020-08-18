@@ -1,19 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="51d8b98d-6c69-4688-9d8e-5e7434236133" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/mission_management.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mission_management.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/AppKernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/AppKernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/config/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/routing.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/routing_dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/routing_dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/security.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/security.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/services.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/services.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/sessions/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/var/sessions/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MissionBundle/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MissionBundle/Controller/DefaultController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MissionBundle/Controller/MissionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MissionBundle/Controller/MissionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MissionBundle/Entity/Mission.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MissionBundle/Entity/Mission.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MissionBundle/Resources/config/services.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/MissionBundle/Resources/config/services.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MissionBundle/Resources/views/Default/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/MissionBundle/Resources/views/Default/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MissionBundle/Resources/views/Mission/list_all_mission.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/MissionBundle/Resources/views/Mission/list_all_mission.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserBundle/EventListener/RegistrationSuccessfulRedirectionSubscriber.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserBundle/EventListener/RegistrationSuccessfulRedirectionSubscriber.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/css/material-dashboard-rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/css/material-dashboard.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/css/material-dashboard.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/css/material-dashboard.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/js/core/bootstrap-material-design.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/js/core/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/js/core/popper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/js/material-dashboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/js/material-dashboard.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/js/material-dashboard.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/js/plugins/arrive.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/js/plugins/bootstrap-datetimepicker.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/js/plugins/bootstrap-notify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/js/plugins/bootstrap-selectpicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/js/plugins/bootstrap-tagsinput.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/js/plugins/chartist.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/js/plugins/fullcalendar.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/js/plugins/jasny-bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/js/plugins/jquery-jvectormap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/js/plugins/jquery.bootstrap-wizard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/js/plugins/jquery.dataTables.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/js/plugins/jquery.tagsinput.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/js/plugins/jquery.validate.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/js/plugins/moment.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/js/plugins/nouislider.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/js/plugins/perfect-scrollbar.jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/js/plugins/sweetalert2.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +120,10 @@
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-apcu" />
       <path value="$PROJECT_DIR$/vendor/symfony/monolog-bundle" />
       <path value="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/assetic-bundle" />
+      <path value="$PROJECT_DIR$/vendor/kriswallsmith/assetic" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
     </include_path>
   </component>
   <component name="ProjectId" id="1gDZIb6pa7eebT9FQQAMB9rdgFQ" />
@@ -83,6 +138,15 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/assets" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/assets" />
+      <recent name="$PROJECT_DIR$/src/MissionBundle/Resources/views/Default" />
+      <recent name="$PROJECT_DIR$/app/Resources/views" />
+      <recent name="$PROJECT_DIR$/app/Resources/FOSUserBundle/views" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -95,20 +159,43 @@
       <workItem from="1597651045843" duration="1801000" />
       <workItem from="1597654519282" duration="1988000" />
       <workItem from="1597674496049" duration="6313000" />
+      <workItem from="1597686781395" duration="10057000" />
+      <workItem from="1597704894561" duration="3125000" />
+      <workItem from="1597709605672" duration="2330000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="839" y="184" width="374" height="426" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1597679566552">
       <screen x="49" y="27" width="1317" height="741" />
     </state>
     <state x="839" y="184" width="374" height="426" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/49.27.1317.741@49.27.1317.741" timestamp="1597679566552" />
-    <state x="643" y="116" width="723" height="561" key="NewPhpClassDialog" timestamp="1597679527423">
+    <state x="764" y="155" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1597706128471">
       <screen x="49" y="27" width="1317" height="741" />
     </state>
-    <state x="643" y="116" width="723" height="561" key="NewPhpClassDialog/49.27.1317.741@49.27.1317.741" timestamp="1597679527423" />
+    <state x="764" y="155" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/49.27.1317.741@49.27.1317.741" timestamp="1597706128471" />
+    <state x="643" y="116" width="723" height="561" key="NewPhpClassDialog" timestamp="1597705911207">
+      <screen x="49" y="27" width="1317" height="741" />
+    </state>
+    <state x="643" y="116" width="723" height="561" key="NewPhpClassDialog/49.27.1317.741@49.27.1317.741" timestamp="1597705911207" />
+    <state x="371" y="175" key="run.anything.popup" timestamp="1597711231345">
+      <screen x="49" y="27" width="1317" height="741" />
+    </state>
+    <state x="371" y="175" key="run.anything.popup/49.27.1317.741@49.27.1317.741" timestamp="1597711231345" />
   </component>
 </project>
